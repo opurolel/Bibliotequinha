@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliotequinha</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Olá, {{teste2}}!</h1>
+    <div id="container_externo">
+        <div id="container_esquerda">
+            <section id="container_1">
+                <h1>Bibliotequinha</h1>
+                <h3>Sua querididinha estantinha de livrinhos online</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/171/171322.png" alt="logo_bibliotequinha">
+            </section>
+            <section id="container_2">
+                <h1>Descubra tudo!</h1>
+                <button>explorar</button>
+                <h3>livros de variados gêneros pra você adicionar à sua estantinha</h3>
+            </section>
+        </div>
+        <div id="container_direita">
+            <section id="container_3">
+                <h1>Nos mostre sua estantinha!</h1>
+                <button>login</button>
+                <h3>Não tem login ainda?</h3>
+                <button>cadastre-se aqui</button>
+            </section>
+        </div>
+    </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
